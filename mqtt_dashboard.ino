@@ -26,8 +26,8 @@
 // CONFIGURATION - Edit these to match your setup
 // ============================================================
 
-const char* WIFI_SSID     = "Syncology";
-const char* WIFI_PASSWORD = "PilipinasKongMahal!";
+const char* WIFI_SSID     = "";
+const char* WIFI_PASSWORD = "";
 
 const char* MQTT_SERVER   = "10.0.0.246";  // your Pi's IP
 const int   MQTT_PORT     = 1883;
