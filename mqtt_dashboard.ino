@@ -26,8 +26,8 @@
 // CONFIGURATION - Edit these to match your setup
 // ============================================================
 
-const char* WIFI_SSID     = "";
-const char* WIFI_PASSWORD = "";
+const char* WIFI_SSID     = "Syncology";
+const char* WIFI_PASSWORD = "PilipinasKongMahal!";
 
 const char* MQTT_SERVER   = "10.0.0.246";  // your Pi's IP
 const int   MQTT_PORT     = 1883;
@@ -46,8 +46,8 @@ const int MARGIN_LEFT   = 20;
 const int MARGIN_RIGHT  = 20;
 const int MARGIN_TOP    = 20;
 const int HEADLINE_Y       = MARGIN_TOP + 34;  // offset by font ascent height (baseline positioning)
-const int SEP_Y_OFFSET     = 18;       // gap below last headline line before separator
-const int BODY_Y_OFFSET    = 38;       // gap below separator before body text (accounts for ascent)
+const int SEP_Y_OFFSET     = 0;       // gap below last headline line before separator
+const int BODY_Y_OFFSET    = 18;       // gap below separator before body text (accounts for ascent)
 const int FOOTER_Y         = SCREEN_H - 20;
 const int CONTENT_W = SCREEN_W - MARGIN_LEFT - MARGIN_RIGHT;
 
@@ -187,8 +187,8 @@ void renderDashboard() {
   }
 
   // Separator
-  epaper.drawLine(MARGIN_LEFT, cursorY, SCREEN_W - MARGIN_RIGHT, cursorY, TFT_BLACK);
-  epaper.drawLine(MARGIN_LEFT, cursorY + 1, SCREEN_W - MARGIN_RIGHT, cursorY + 1, TFT_BLACK);
+  //epaper.drawLine(MARGIN_LEFT, cursorY, SCREEN_W - MARGIN_RIGHT, cursorY, TFT_BLACK);
+  //epaper.drawLine(MARGIN_LEFT, cursorY + 1, SCREEN_W - MARGIN_RIGHT, cursorY + 1, TFT_BLACK);
   cursorY += BODY_Y_OFFSET;
 
   // Body
